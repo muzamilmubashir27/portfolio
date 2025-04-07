@@ -18,7 +18,7 @@ Welcome to my portfolio — I’m glad you’re here!`;
           onComplete();
         }, 1000);
       }
-    }, 100);
+    }, 50);
 
     return () => clearInterval(interval);
   }, [onComplete]);

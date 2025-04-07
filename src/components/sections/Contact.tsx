@@ -14,10 +14,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_a7sp8m7",
-        "template_cqluhrl",
+        import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID, // Access service ID from .env
+        import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID, // Access template ID from .env
         e.target,
-        "bQK2wVC-8e8b3Lqso"
+        import.meta.env.VITE_REACT_APP_EMAILJS_USER_ID // Access user ID from .env
       )
       .then((result) => {
         alert("Message Sent!");
